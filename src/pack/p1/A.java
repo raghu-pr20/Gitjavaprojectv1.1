@@ -13,7 +13,14 @@ public class A {
 		int x1 = list.stream().max(Comparator.naturalOrder()).get();
 		System.out.println(x);
 		System.out.println(x1);
+		int s = m2(x, x1);
+		System.out.println("Sum = " + s);
 
+	}
+
+	public static int m2(int x, int y) {
+		int sum = x + y;
+		return sum;
 	}
 
 }
